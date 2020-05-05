@@ -6,8 +6,6 @@ jobs:
       - image: circleci/buildpack-deps:latest
     working_directory: ~/repo
     steps:
-      - setup_remote_docker:
-          docker_layer_caching: true
       - checkout
       - run:
           name: build the app docker image
